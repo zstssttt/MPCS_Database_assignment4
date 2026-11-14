@@ -1,11 +1,8 @@
 [project]
 name = "assignment4"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sakila (MySQL) -> SQLite analytics ORM data sync"
 readme = "README.md"
-authors = [
-    { name = "sharonsstt", email = "st15000904327@163.com" }
-]
 requires-python = ">=3.13"
 dependencies = [
     "pymysql>=1.2.4",
@@ -13,14 +10,10 @@ dependencies = [
     "sqlalchemy>=2.1.8",
 ]
 
-[project.scripts]
-assignment4 = "assignment4:main"
-
-[build-system]
-requires = ["uv_build>=0.12.20,<0.13.0"]
-build-backend = "uv_build"
-
 [dependency-groups]
 dev = [
     "pytest>=9.2.0",
 ]
+
+[tool.uv]
+package = false
